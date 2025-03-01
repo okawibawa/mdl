@@ -53,14 +53,14 @@ def main():
     parser.add_argument(
         "format",
         choices=["MP3", "MP4", "mp3", "mp4"],
-        help="Output format: MP3 or MP4. Case-insensitive",
+        help="Output format: MP3 or MP4.",
     )
     parser.add_argument(
         "resolution",
         nargs="?",
         type=int,
         default=None,
-        help="Desired resolution for MP4 (e.g. 720, 1080); optional for MP3",
+        help="Desired resolution for MP4 (e.g. 720, 1080); optional for MP3, required for MP4",
     )
 
     args = parser.parse_args()
