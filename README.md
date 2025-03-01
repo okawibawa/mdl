@@ -57,7 +57,7 @@ pip install -r requirements.txt
 Run the script from the project root:
 
 ```bash
-python scr/downloader.py
+python src/downloader.py
 ```
 
 ## Example runs:
@@ -67,7 +67,7 @@ python scr/downloader.py
 ```bash
 Video URL: https://youtu.be/cbHkzwa0QmM
 Output format (supported: MP3 & MP4): MP4 # Case-insensitive (e.g., "mp4", "MP4", "Mp4" all work).
-Desired resolution (e.g. 720, 1080, etc): 1080 # Resolution will only show if you choose MP4
+Desired resolution (e.g. 720, 1080, etc): 1080 # Resolution will only show if you choose MP4.
 [download progress...]
 Downloaded https://youtu.be/cbHkzwa0QmM as MP4 to /path/to/youtube_downloader/downloads
 ```
