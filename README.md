@@ -1,6 +1,6 @@
 # MDL
 
-A simple Python script to download YouTube videos as MP4 or audio as MP3 using `yt-dlp`. This tool allows you to specify a maximum video resolution for MP4 downloads and extracts audio to MP3 with a configurable bitrate.
+This simple script was created to streamline downloading YouTube videos and audio for use in my other projects, where I frequently need both MP4 videos and MP3 audio files. My personal use case involves adding an alias to my .zshrc for quick access and customizing the download folder to fit my workflow. Built with yt-dlp, this command-line tool makes it easy to grab media with a single command.
 
 ## Features
 
@@ -12,7 +12,7 @@ A simple Python script to download YouTube videos as MP4 or audio as MP3 using `
 
 - Error handling for invalid URLs or unavailable formats.
 
-- Cross-platform support (tested on Arch Linux).
+- Cross-platform support (tested on Arch Linux and macOS).
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ A simple Python script to download YouTube videos as MP4 or audio as MP3 using `
 1. Clone the Repository (if using Git):
 
 ```bash
-git clone https://github.com/yourusername/youtube_downloader.git
+git clone https://github.com/okawibawa/mdl.git
 cd youtube_downloader
 ```
 
@@ -62,13 +62,13 @@ python src/downloader.py <url> <format> [resolution]
 
 ### Arguments
 
-- <url>: YouTube video URL (required).
+- `<url>`: YouTube video URL (required).
 
-- <format>: Output format, either "MP3" or "MP4" (case-insensitive, required).
+- `<format>`: Output format, either "MP3" or "MP4" (case-insensitive, required).
 
-- [resolution]: Maximum resolution in pixels for MP4 (e.g., 720, 1080); optional for MP3, required for MP4.
+- `[resolution]`: Maximum resolution in pixels for MP4 (e.g., 720, 1080); optional for MP3, required for MP4.
 
-## Example runs:
+## Example runs
 
 - Download as MP3:
 
@@ -84,7 +84,7 @@ Saves to `downloads/{video_title}.mp3`
 python src/downloader.py "https://youtu.be/cbHkzwa0QmM" mp4 1080
 ```
 
-Saves to `downloads/{video_title}.mp4` 
+Saves to `downloads/{video_title}.mp4`
 
 - Get help:
 
