@@ -30,7 +30,7 @@ This simple script was created to streamline downloading YouTube videos and audi
 
 ```bash
 git clone https://github.com/okawibawa/mdl.git
-cd youtube_downloader
+cd mdl
 ```
 
 Or manually create the folder structure and copy `downloader.py` into `src/`.
