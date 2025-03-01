@@ -1,6 +1,6 @@
 # MDL
 
-This simple script was created to streamline downloading YouTube videos and audio for use in my other projects, where I frequently need both MP4 videos and MP3 audio files. My personal use case involves adding an alias to my .zshrc for quick access and customizing the download folder to fit my workflow. Built with yt-dlp, this command-line tool makes it easy to grab media with a single command.
+This simple script was created to streamline downloading YouTube videos and audio for use in my other projects, where I frequently need both MP4 videos and MP3 audio files. My personal use case involves adding an alias to my `.zshrc` for quick access and customizing the download folder to fit my workflow. Built with `yt-dlp`, this command-line tool makes it easy to grab media with a single command.
 
 ## Features
 
