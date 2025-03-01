@@ -57,26 +57,37 @@ pip install -r requirements.txt
 Run the script from the project root:
 
 ```bash
-python src/downloader.py
+python src/downloader.py <url> <format> [resolution]
 ```
+
+### Arguments
+
+- <url>: YouTube video URL (required).
+
+- <format>: Output format, either "MP3" or "MP4" (case-insensitive, required).
+
+- [resolution]: Maximum resolution in pixels for MP4 (e.g., 720, 1080); optional for MP3, required for MP4.
 
 ## Example runs:
 
-- MP4 Download:
+- Download as MP3:
 
 ```bash
-Video URL: https://youtu.be/cbHkzwa0QmM
-Output format (supported: MP3 & MP4): MP4 # Case-insensitive (e.g., "mp4", "MP4", "Mp4" all work).
-Desired resolution (e.g. 720, 1080, etc): 1080 # Resolution will only show if you choose MP4.
-[download progress...]
-Downloaded https://youtu.be/cbHkzwa0QmM as MP4 to /path/to/youtube_downloader/downloads
+python src/downloader.py "https://youtu.be/cbHkzwa0QmM" mp3
 ```
 
-- MP3 Download:
+Saves to `downloads/{video_title}.mp3`
+
+- Download as MP4:
 
 ```bash
-Video URL: https://youtu.be/cbHkzwa0QmM
-Output format (supported: MP3 & MP4): MP3 # Case-insensitive (e.g., "mp4", "MP4", "Mp4" all work).
-[download progress...]
-Downloaded https://youtu.be/cbHkzwa0QmM as MP3 to /path/to/youtube_downloader/downloads
+python src/downloader.py "https://youtu.be/cbHkzwa0QmM" mp4 1080
+```
+
+Saves to `downloads/{video_title}.mp4` 
+
+- Get help:
+
+```bash
+python src/downloader.py --help
 ```
